@@ -23,10 +23,6 @@ namespace F2GTraining.Controllers
       
 
 
-        public EquiposController(ServiceAPIF2GTraining service)
-        {
-            this.service = service;
-        }
 
         [AuthorizeUsers]
         public async Task<IActionResult> MenuEquipo()
