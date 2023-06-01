@@ -15,7 +15,7 @@ function listaNotas() {
         background: '#111111',
         color: "#CFC0FF",
         showCancelButton: true,
-        confirmButtonText: "Guardar Nota",
+        confirmButtonText: "Guardar Notas",
         cancelButtonText: "Cancelar",
         allowOutsideClick: () => {
             return false
