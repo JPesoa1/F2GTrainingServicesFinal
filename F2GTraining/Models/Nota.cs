@@ -2,6 +2,7 @@
 {
     public class Nota
     {
+        public int Id { get; set; }
         public string titulo { get; set; }
         public string cuerpo { get; set; }
     }

@@ -7,11 +7,16 @@ function vuelveInicio() {
     window.location.href = "/equipos/MenuEquipo";
 }
 
+
+
+
 function listaNotas() {
     document.getElementsByClassName("view-sessions-zone")[0].style.display = "none";
     Swal.fire({
         title: "Nombre de la Nota",
-        input: "text",
+        html:
+            '<input type="text"/><br/>' +
+            '<input type="text"/>' ,
         background: '#111111',
         color: "#CFC0FF",
         showCancelButton: true,
@@ -23,8 +28,8 @@ function listaNotas() {
     }).then(resultado => {
         console.log(resultado)
         if (resultado.isConfirmed) {
-            $('#inputtitulo').val(resultado.value);
-            $('#inputcuerpo').val(resultado.value);
+            $('#titulo').val(resultado.value);
+            $('#cuerpo').val(resultado.value);
             $('#form-new-nota').submit();
         }
         else {

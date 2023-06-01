@@ -1,3 +1,4 @@
+using Amazon.SQS;
 using Azure.Security.KeyVault.Secrets;
 using Azure.Storage.Blobs;
 using F2GTraining.Services;
@@ -24,6 +25,7 @@ var builder = WebApplication.CreateBuilder(args);
 //builder.Services.AddTransient<ServiceStorageBlobs>();
 
 builder.Services.AddTransient<ServiceAPIF2GTraining>();
+builder.Services.AddAWSService<IAmazonSQS>();
 builder.Services.AddTransient<ServiceSQS>();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession(options =>
