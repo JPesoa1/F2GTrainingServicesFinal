@@ -1,0 +1,39 @@
+﻿@section CSSLinks{
+    <link rel="stylesheet" href="~/css/sweetalert2.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/listaNotas.css" asp-append-version="true" />
+}
+@section Scripts{
+    <script src="~/js/sweetalert2.js" asp-append-version="true"></script>
+    <script src="~/js/listanotas.js" asp-append-version="true"></script>
+}
+<h1>Notas</h1>
+
+<div class="view-sessions-zone">
+    <div class="team-title">
+        <p>Notas de Equipo: </p>
+    </div>
+    <div class="sessions-site">
+
+
+        <div class="session-name" onclick="muestraOpciones(1)">
+                    <span>Prueba</span>
+                            
+                </div>
+                <div class="session-options" id="sessionopt-1">
+                    <p id="cuerpoNota">kkkhohihpi
+                    </p>
+                </div>
+            }
+
+       
+    </div>
+    <div class="border-sessions"></div>
+    <div class="button-zone">
+        <button onclick="vuelveInicio()" class="back-button">VOLVER</button>
+        <button onclick="listaNotas()" class="new-session">GUARDAR NOTA</button>
+    </div>
+</div>
+<form id='form-new-nota' method="post"> 
+  <input type="hidden" id="inputtitulo" name="titulo" value="">
+  <input type="hidden" id="inputcuerpo" name="cuerpo" >
+</form>
